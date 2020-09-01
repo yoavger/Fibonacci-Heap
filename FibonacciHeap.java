@@ -33,7 +33,7 @@ public class FibonacciHeap
     * The method returns true if and only if the heap
     * is empty.
     *   
-    * Complexity --> o(1)
+    * Complexity --> )(1)
     */
     public boolean isEmpty()
     {
