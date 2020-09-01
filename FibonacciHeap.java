@@ -48,7 +48,7 @@ public class FibonacciHeap
     *
     * Creates a node (of type HeapNode) which contains the given key, and inserts it into the heap. 
     * 
-    * Complexity --> o(1)
+    * Complexity --> O(1)
     */
     public HeapNode insert(int key)
     {   
@@ -64,7 +64,7 @@ public class FibonacciHeap
      *
      * Inserts a given node or tree into the heap. 
      * 
-     * Complexity --> o(1)
+     * Complexity --> O(1)
      */
     private HeapNode add(HeapNode node) {
     	
@@ -101,7 +101,7 @@ public class FibonacciHeap
     *
     * Delete the node containing the minimum key.
     *
-    * Complexity --> o(n) W.C, o(log(n)) Amortized
+    * Complexity --> O(n) W.C, o(log(n)) Amortized
     */
     public void deleteMin()
     {
@@ -173,7 +173,7 @@ public class FibonacciHeap
      * utility func
      * preforms consolidation post minimum deletion
      * 
-     * Complexity --> o(n) W.C, o(log(n)) Amortized
+     * Complexity --> O(n) W.C, o(log(n)) Amortized
      * 
      */
     
@@ -215,7 +215,7 @@ public class FibonacciHeap
      *
      * Link two trees with the same degree, to one tree of degree +1
      *
-     * Complexity --> o(1)
+     * Complexity --> O(1)
      */
     private HeapNode link(HeapNode x , HeapNode y) {
     	
@@ -246,7 +246,7 @@ public class FibonacciHeap
     *
     * Return the node of the heap whose key is minimal. 
     *
-    * Complexity --> o(1)
+    * Complexity --> O(1)
     */
     public HeapNode findMin()
     {
@@ -258,7 +258,7 @@ public class FibonacciHeap
     *
     * Meld the heap with heap2
     * 
-    * Complexity --> o(1)
+    * Complexity --> O(1)
     */
     public void meld (FibonacciHeap heap2)
     {
@@ -289,7 +289,7 @@ public class FibonacciHeap
     *
     * Return the number of elements in the heap
     *   
-    * Complexity --> o(1)
+    * Complexity --> O(1)
     */
     public int size()
     {
@@ -323,7 +323,7 @@ public class FibonacciHeap
     * Deletes the node x from the heap. 
     * Performs Delete, by calling decreaseKey and delete min.
     * 
-    * Complexity --> Amortized o(log(n)), WC o(n)
+    * Complexity --> Amortized O(log(n)), WC o(n)
     */
     public void delete(HeapNode x) 
     {   
@@ -337,7 +337,7 @@ public class FibonacciHeap
     * The function decreases the key of the node x by delta. The structure of the heap should be updated
     * to reflect this change (for example, the cascading cuts procedure should be applied if needed).
     * 
-    * Complexity --> Amortized o(1)
+    * Complexity --> Amortized O(1)
     */
     public void decreaseKey(HeapNode x, int delta)
     {   
@@ -360,7 +360,7 @@ public class FibonacciHeap
      *
      * Utility function, performs cut
      * 
-     * Complexity --> o(1)
+     * Complexity --> O(1)
      */
     private void cut(HeapNode x,HeapNode y) {
     	
@@ -389,7 +389,7 @@ public class FibonacciHeap
      *
      * Performs cascading cut
      * 
-     * Complexity --> Amortized o(1)
+     * Complexity --> Amortized O(1)
      */
     private void cascadingCut(HeapNode y) {
     	
@@ -414,7 +414,7 @@ public class FibonacciHeap
     * Potential = #trees + 2*#marked
     * The potential equals to the number of trees in the heap plus twice the number of marked nodes in the heap. 
     * 
-    * Complexity --> o(1)
+    * Complexity --> O(1)
     */
     public int potential() 
     {    
@@ -429,7 +429,7 @@ public class FibonacciHeap
     * rank bigger by one, by hanging the tree which has larger value in its root on the tree which has smaller value 
     * in its root.
     * 
-    * Complexity --> o(1)
+    * Complexity --> O(1)
     */
     public static int totalLinks()
     {    
@@ -442,7 +442,7 @@ public class FibonacciHeap
     * This static function returns the total number of cut operations made during the run-time of the program.
     * A cut operation is the operation which diconnects a subtree from its parent (during decreaseKey/delete methods).
     * 
-    *  Complexity --> o(1)
+    *  Complexity --> O(1)
     */
     public static int totalCuts()
     {    
